@@ -26,3 +26,21 @@ Dự án này là một ứng dụng quản lý giải bóng đá được xây 
    - Hiển thị lịch thi đấu, kết quả và bảng xếp hạng cho người dùng.
 
 ---
+# Project: championHub
+Football Managment Web Application
+
+# Description
+## UML
+
+
+
+# Install
+```
+composer create-project --prefer-dist laravel/laravel championHubWebApp
+
+php artisan serve
+
+```
+# Deployment
+
+https://super-duper-space-tribble-7vvj7p44gg7xfrrxw-8000.app.github.dev/
