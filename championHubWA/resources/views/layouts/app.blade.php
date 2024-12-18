@@ -1,6 +1,7 @@
 <!-- resources/views/layouts/app.blade.php -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,14 @@
     <!-- Đảm bảo đường dẫn đúng tới file CSS -->
     <link rel="stylesheet" href="{{ asset('./css/app.css') }}">
 </head>
+
 <body>
     <header>
         <nav>
+            <a href="/">
+                <img src="{{ asset('images/logoWA.svg') }}" alt="Logo" id="logo">
+            </a>
             <ul>
-                <li><a href="">Logo</a></li>
                 <li><a href="">Trang chủ</a></li>
                 <li><a href="">Giải đang diễn ra</a></li>
                 <li><a href="">Giải đang theo dõi</a></li>
@@ -34,4 +38,5 @@
         <p>&copy; 2024 CHAMPIONHUB</p>
     </footer>
 </body>
+
 </html>

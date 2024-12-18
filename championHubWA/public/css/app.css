@@ -19,12 +19,21 @@ header {
     color: white;
     padding: 10px 0;
 }
+nav{
+    display: flex;
+    justify-content: space-between; /* Logo ở trái, menu ở giữa */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 1; /* Chiếm không gian giữa logo và menu */
 }
 
 nav ul li {
@@ -41,7 +50,11 @@ nav ul li a {
 nav ul li a:hover {
     color: #60a5fa; /* Màu xanh nhạt khi hover */
 }
-
+#logo{
+    width: 80px;
+    height: auto;
+    margin-right: 10%;
+}
 /* Main Content */
 main .container {
     max-width: 1200px;
