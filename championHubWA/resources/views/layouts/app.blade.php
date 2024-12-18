@@ -23,7 +23,7 @@
                 <li><a href="">Quản lý Giải đấu</a></li>
                 <li><a href="">Đội bóng</a></li>
                 <li><a href="">Tin tức</a></li>
-                <li><a href="">Đăng nhập</a></li>
+                <li><a href="{{ route('login')}}">Đăng nhập</a></li>
                 <li><a href="">Đăng ký</a></li>
             </ul>
         </nav>
