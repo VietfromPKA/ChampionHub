@@ -5,22 +5,22 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class DoiBan extends Model
+class KetQua extends Model
 {
     use HasFactory;
 
     // Định nghĩa bảng tương ứng với model
-    protected $table = 'doi_ban';
+    protected $table = 'ket_qua';
 
     // Định nghĩa các cột có thể mass-assignable
     protected $fillable = [
-        'ten_doi',
-        'giai_dau_id',
+        'doi_ban_id',
+        'diem',
     ];
 
-    // Quan hệ với bảng 'GiaiDau' (mỗi đội có một giải đấu)
-    public function giaiDau()
+    // Quan hệ với bảng 'DoiBan' (một kết quả thuộc về một đội)
+    public function doiBan()
     {
-        return $this->belongsTo(GiaiDau::class, 'giai_dau_id');
+        return $this->belongsTo(DoiBan::class);
     }
 }
