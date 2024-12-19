@@ -24,7 +24,7 @@
                 <li><a href="">Đội bóng</a></li>
                 <li><a href="">Tin tức</a></li>
                 <li><a href="{{ route('login')}}">Đăng nhập</a></li>
-                <li><a href="">Đăng ký</a></li>
+                <li><a href="{{ route('signin')}}">Đăng ký</a></li>
             </ul>
         </nav>
     </header>

@@ -19,3 +19,7 @@ Route::get('/', function () {
 Route::get('/login', function () {
     return view('auth.login'); // Trả về view 'login'
 })->name('login');
+
+Route::get('/signin', function () {
+    return view('auth.signin'); // Trả về view 'signin'
+})->name('signin');
