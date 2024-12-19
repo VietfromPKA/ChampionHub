@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateBinhLuanTable extends Migration
+return new class extends Migration
 {
     /**
      * Chạy migration để tạo bảng 'binh_luan'.
@@ -31,4 +31,4 @@ class CreateBinhLuanTable extends Migration
     {
         Schema::dropIfExists('binh_luan');
     }
-}
+};

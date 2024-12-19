@@ -18,9 +18,9 @@ class DoiBan extends Model
         'giai_dau_id',
     ];
 
-    // Quan hệ với bảng 'GiaiDau' (mỗi đội có một giải đấu)
+    // Quan hệ với bảng 'GiaiDau' (một đội ban thuộc về một giải đấu)
     public function giaiDau()
     {
-        return $this->belongsTo(GiaiDau::class, 'giai_dau_id');
+        return $this->belongsTo(GiaiDau::class);
     }
 }
